@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/stylesheets/style.css">
+    <script src="/public/javascripts/script.js" defer ></script>
+
+    <style>
+
+
+        /* Style the Services Page */
+        #services {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        /* Style the Services Section Title */
+        #services h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #ff6600;
+
+        }
+
+        /* Style the Service Items */
+        #services ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+
+        #services li {
+            width: calc(33.33% - 20px); /* Adjust the width based on your layout */
+            margin: 10px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #services li:hover {
+            transform: scale(1.05);
+        }
+
+        /* Style the Service Images */
+        #services img {
+            width: 100%;
+            max-height: 150px; /* Adjust the maximum height of the images */
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Style the Service Titles */
+        #services p:first-child {
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        /* Style the Service Descriptions */
+        #services p:last-child {
+            font-size: 16px;
+            color: #777;
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav>
+        
+    <ul>
+        <li><a href="/html/index.html">Home</a></li>
+        <li><a href="/html/about.html">About</a></li>
+        <li><a href="/html/project.html">Projects</a></li>
+        <li><a href="/html/services.html">Services</a></li>
+        <li><a href="/html/contact.html">Contact</a></li>
+    </ul>
+    <div class="logo" id="logo">
+        <img src="/public/images/1.png" alt="Custom Logo">
+    </div>
+</nav>
+
+<div class="social-icons"  id="socialIcons">
+    <a href="https://www.linkedin.com/" target="_blank"><img src="/public/images/linkedin.png" alt="LinkedIn"></a>
+    <a href="mailto:Vishal08072003@gmail.com"><img src="/public/images/gmail.jpg" alt="Gmail"></a>
+    <a href="https://www.facebook.com/" target="_blank"><img src="/public/images/facebook.avif" alt="Facebook"></a>
+</div>
+
+    <!-- Services Page -->
+    <section id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>
+                <img src="/public/images/web Dev.jpg" alt="Web Development">
+                <p>Web Development</p>
+                <p>Description: We specialize in creating responsive and user-friendly websites tailored to your unique business needs.</p>
+            </li>
+            <li>
+                <img src="/public/images/mobile dev.webp" alt="Mobile App Development">
+                <p>Mobile App Development</p>
+                <p>Description: Our team is experienced in developing mobile apps for both Android and iOS platforms, ensuring a seamless user experience.</p>
+            </li>
+            <li>
+                <img src="/public/images/digital marketing.avif" alt="Digital Marketing">
+                <p>Digital Marketing</p>
+                <p>Description: Boost your online presence with our digital marketing services, including SEO, social media marketing, and content strategy.</p>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
+

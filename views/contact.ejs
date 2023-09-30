@@ -1,0 +1,135 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/javascripts/script.js" defer ></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: inline;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #ff6600;
+        }
+
+        #contact {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #ff6600;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        input[type="submit"] {
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ff3300;
+        }
+    </style>
+</head>
+<body>
+
+    <%- include('./partials/header.ejs') %>
+
+    
+    
+
+    <!-- Contact Page -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <p>Email: Vishal08072003@gmail.com</p>
+            <p>Phone: +1 226-883-2723</p>
+        </div>
+        <form action="" method="post">
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <input type="text" name="last_name" placeholder="Last Name" required>
+            <input type="tel" name="contact_number" placeholder="Contact Number" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <%- include('./partials/footer.ejs') %>
+
+</body>
+</html>

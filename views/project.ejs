@@ -1,0 +1,137 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/javascripts/script.js" defer ></script>
+    <style>
+
+
+        /* Additional CSS for Projects Page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: black;
+            color: #fff;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: inline;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #ff6600;
+        }
+
+        #projects {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #ff6600;
+            margin-top: 20px; /* Move the heading to the top */
+        }
+
+        .project {
+            max-width: 40%; /* Adjust the width based on your layout */
+            background-color: #fff;
+            margin: 20px auto; /* Center horizontally */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out; /* Add transition for smooth scaling */
+
+        }
+        .project:hover {
+    transform: scale(1.05); /* Scale up by 5% on hover */
+}
+
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            
+        }
+
+        .project h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .project p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    
+    <%- include('./partials/header.ejs') %>
+
+
+   
+
+    <!-- Projects Page -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="/images/To do.png" alt="Project 1">
+            <p><strong>Project Name:</strong> To-Do List Web App<br>
+                <strong>Description:</strong> Developed a simple web application for creating and managing to-do lists. Users can add, edit, and delete tasks. Implemented a responsive design for seamless use on both desktop and mobile devices.<br>
+                <strong>Your Role:</strong> Full-stack developer responsible for frontend and backend development, including database integration and user authentication.
+            </p>
+        </div>
+        <br><br>
+        <div class="project">
+            <img src="/images/blogging.png" alt="Project 2">
+            <p>
+                <strong>Project Name:</strong> Blogging Platform<br>
+                <strong>Description:</strong> Built a blogging platform where users can create and publish their blogs. The platform includes features such as user registration, blog creation, commenting, and user profiles.<br>
+                <strong>Your Role:</strong> Frontend developer responsible for designing the user interface and implementing a user-friendly blogging editor.
+            </p>
+        </div>
+        <br><br>
+
+        <div class="project">
+            <img src="/images/wheather.png" alt="Project 3">
+            <p>
+                <strong>Project Name:</strong> Weather App<br>
+                <strong>Description:</strong> Created a weather application that provides real-time weather information for any location. Users can search for a city and get details like temperature, humidity, and a five-day forecast.<br>
+                <strong>Your Role:</strong> Mobile app developer responsible for building a cross-platform mobile app using React Native.
+            </p>
+        </div>
+        
+    </section>
+    <%- include('./partials/footer.ejs') %>
+
+
+</body>
+</html>
