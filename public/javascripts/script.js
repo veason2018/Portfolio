@@ -55,3 +55,7 @@ socialIcons.addEventListener('mouseleave', () => {
     socialIcons.style.display = 'none';
     socialIcons.style.transform = 'scale(0)';
 });
+
+function submitForm() {
+    document.querySelector("form").submit();
+  }
